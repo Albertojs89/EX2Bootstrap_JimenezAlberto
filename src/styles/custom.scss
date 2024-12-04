@@ -3,6 +3,7 @@
 
 body{
   width: 1700px;
+  height: 4000px;
   margin: 0 auto;
   //provisional
   background-color: rgb(182, 182, 166);
@@ -16,6 +17,9 @@ header{
   }
 }
 
+.header1{
+  font-size: 13px;
+}
 
 ul{
   list-style: none;
@@ -24,6 +28,13 @@ a{
   list-style: none;
   text-decoration: none;
   color: rgb(61, 59, 59);
+}
+
+.a1:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(226, 44, 44);
+  text-decoration-thickness: 3px; /* Ajusta el grosor de la línea según tu preferencia */
+  transition: all 0.6s ease-in-out;
 }
 
 .header-2{
@@ -90,3 +101,12 @@ a{
   }
 }
 
+.texto{
+  text-align: center;
+  align-items: center;
+  width: 554px;
+  height: 160px;
+  margin: auto;
+  margin-top: 100px;
+  
+}
