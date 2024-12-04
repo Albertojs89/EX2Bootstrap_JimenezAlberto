@@ -6,7 +6,7 @@
     <title>Document</title>
   </head>
   <link rel="stylesheet" href="/styles/custom.css" />
-
+  <script src="https://kit.fontawesome.com/c5ee713d6d.js" crossorigin="anonymous"></script>
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     rel="stylesheet"
@@ -15,22 +15,12 @@
   />
 
   <body>
-    <header>
+    <header class="header1">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <div class="d-flex align-items-center">
             <p class="ms-3 mb-0">FENDER.COM</p>
           </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav d-flex w-100">
@@ -43,21 +33,79 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">PRINCIPIANTES</a>
               </li>
-              <!-- Aquí movemos Contact a la derecha usando la clase ml-auto (margin-left auto) -->
-              <li class="nav-item ms-auto">
-                <a class="nav-link disabled" aria-disabled="true">INICIAR SESIÓN</a>
-              </li>
+              <!-- Aquí movemos Iniciar sesion a la derecha usando la clase ms-auto (margin-left auto) -->
+               <ul class="navbar-nav d-flex ms-auto">
+                  <li class="nav-item me-3 mt-2 icon-user">
+                    <i class="fa-regular fa-user"></i>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">INICIAR SESIÓN</a>
+                  </li>
+               </ul>
             </ul>
           </div>
         </div>
       </nav>
-      <nav class="d-flex">
+
+      <!-- HEADER 2 barra buscador e iconos -->
+      <div class="header-2 mt-3 d-flex align-items-center justify-content-between">
          <div>
           <img src="https://logos-world.net/wp-content/uploads/2020/12/Fender-Logo.png" alt="Logo" style="width: 120px;" />
         </div>
-      </nav>
+      
+        <!-- barra de search+Fender Icon -->
+
+        <div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 search" type="search" placeholder="Buscar" aria-label="Search">
+            </form>
+          </div>
+        </nav>
+        <ul class="d-flex nav-link gap-4">
+          <li><i class="fa-solid fa-location-dot"></i></li>
+          <li><i class="fa-solid fa-cart-shopping"></i></li>
+        </ul>
+      </div>
+
+      <!-- Ultima barra de navegacion con pestañas -->
+
+      <div class="navbar navbar-expand-lg nav3">
+        <div class="dropdown">
+          <ul class="d-flex lista-desplegable">
+            <a href=""><ul class="dropdown-toggle" type="menu">CYBER MONDAY</ul></a>
+            <a href=""><ul class="dropdown-toggle" type="menu">GUÍA DE REGALOS</ul></a>
+            <a href=""><ul class="dropdown-toggle" type="menu">MOD SHOP</ul></a>
+            <a href=""><ul class="dropdown-toggle" type="menu">GUITARRAS ELÉCTRICAS</ul></a>
+            <a href=""><ul class="dropdown-toggle" type="menu">BAJOS</ul></a>
+             <a href=""><ul class="dropdown-toggle" type="menu">SQUIER</ul></a>
+            <a href=""><ul class="dropdown-toggle" type="menu">INSTRUMENTOS ACÚSTICOS</ul></a>
+            <a href=""><ul class="dropdown-toggle" type="menu">AMPLIFICADORES</ul></a>
+            <a href=""><ul class="dropdown-toggle" type="menu">PEDALES</ul></a>
+            <a href=""><ul class="dropdown-toggle" type="menu">ACCESORIOS & MÁS</ul></a>
+          </ul>
+          
+        </div>
+      </d>
     </header>
 
+
+    <!-- carrusel de imagenes -->
+  <div class="alert alert-primary d-flex align-items-center justify-content-center" role="alert">
+    <i class="fa-solid fa-box"></i>
+    <p class="mt-2"><strong><u>Envío gratis</u></strong> en pedidos superiores a 49€ | <strong><u>Cyber Monday</u></strong></p>
+  </div>
+    
+    <div class="imagen1">
+        <div class="imagen1">
+          <img src="https://stuff.fendergarage.com/images/N/R/m/Fender_HO24_Holiday-Gift-Guide_EMEA_LandingPage_Final_ES1_MainHeroBanner_1440x340@2x.jpg"  alt="...">
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
