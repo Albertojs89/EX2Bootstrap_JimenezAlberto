@@ -1,1 +1,33 @@
 @import "bootstrap/scss/bootstrap";
+
+
+body{
+  width: 1600px;
+  margin: 0 auto;
+  //provisional
+  background-color: rgb(182, 182, 166);
+}
+
+ul{
+  list-style: none;
+}
+
+.header-2{
+  width: 1200px;
+  margin-left: 150px;
+
+
+  .search{
+    border-radius: 50px;
+    width: 580px;
+    height: 55px;
+    border: 4px solid rgb(180, 177, 177);
+  }
+
+  i{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 15px;
+    
+  }
+}
