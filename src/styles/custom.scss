@@ -32,6 +32,15 @@ header{
 
 .header1{
   font-size: 13px;
+
+  .sesionLog{
+    gap: 30px;
+  }
+
+  .login{
+    font-size: 13px;
+    font-weight: 700;
+  }
 }
 
 
@@ -60,7 +69,7 @@ a{
     border-radius: 50px;
     width: 580px;
     height: 55px;
-    border: 4px solid rgb(180, 177, 177);
+    border: 2px solid rgb(180, 177, 177);
     padding-left: 50px;
     
   }
@@ -225,11 +234,12 @@ a{
 
 
 .section-destacados{
-  width: 100%;
-  margin-top: 20px;
+  width: 1500px;
+  margin: auto;
+  
 
   .header-3{
-    margin-left: 100px;
+    
     
     h2{
       font-size: 25px;
@@ -244,7 +254,7 @@ a{
       margin-top: 20px;
 
         .lista-desplegable{
-          margin-left: 40px;
+          
           gap: 10px;
 
           ul{
@@ -271,19 +281,75 @@ a{
         }
    }
   }
+  
+.imagenCarousel2{
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
 
-
+  .imagenCar{
+    width: 180px;
+    height: auto;
+  }
+}
 }
 
 //MODELOS PRINCIPALES
 
 
 .modelos-principales{
-  width: 100%;
+  width: 1500px;
+  margin: auto;
 
   h2{
     font-size: 40px;
-    text-align: center;
+    
   }
 
+ p{
+  margin-top: 20px;
+  font-weight: 700;
+ }
+      
+}
+.img-container {
+    overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+    position: relative; /* Para que el zoom funcione correctamente */
+    
+}
+.img-container img{
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+  transition: transform 0.5s ease; /* Suaviza la transición del zoom */
+}
+
+.img-container:hover img{
+  transform: scale(1.2); /* Zoom al pasar el ratón */
+}
+
+//seccion 2 imagenes tienda
+
+.tarjetas-tienda{
+  width: 1500px;
+  margin: auto;
+
+  p{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    z-index: 1;
+    top: 3500px;
+    margin-left: 20px;
+  }
+}
+
+
+aside{
+  width: 1500px;
+  margin: auto;
+  margin-top: 180px;
+  padding-top: 90px;
+  border-top: 2px solid rgb(192, 192, 192);
 }
